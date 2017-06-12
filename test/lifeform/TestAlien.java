@@ -28,7 +28,7 @@ public class TestAlien
      * testSetRecoveryRateInConstructor Check set recovery rate in Constructor
      * @throws MyNewException
      */
-    @Test(expected = MyNewException.class)
+    @Test
     public void testSetRecoveryRateInConstructor() throws MyNewException 
     {
         Alien alien = new Alien("Alien", 40, new RecoveryLinear(5), 2);
@@ -39,7 +39,7 @@ public class TestAlien
      * testSetRecoveryRateInSetter Check set recovery rate in setter
      * @throws MyNewException 
      */
-    @Test(expected = MyNewException.class)
+    @Test
     public void testSetRecoveryRateInSetter() throws MyNewException 
     {
     	Alien alien = new Alien("Alien", 40, new RecoveryLinear(5), 2);
@@ -51,7 +51,7 @@ public class TestAlien
      * testRecoveryRateAtZero Check test recovery rate at 0
      * @throws MyNewException
      */
-    @Test(expected = MyNewException.class)
+    @Test
     public void testRecoveryRateAtZero() throws MyNewException 
     {
         Alien alien = new Alien("Alien", 40, new RecoveryLinear(5), 0);
@@ -69,7 +69,7 @@ public class TestAlien
      * testRecoveryRateGreaterZero test recover at rate > 0
      * @throws MyNewException
      */
-    @Test (expected = MyNewException.class)
+    @Test 
     public void testRecoveryRateGreaterZero() throws MyNewException 
     {
         Alien alien = new Alien("Alien", 40, new RecoveryLinear(5), 2);
@@ -88,7 +88,7 @@ public class TestAlien
      * testTwoRecoveryRate test recover at 2 different rates > 0
      * @throws MyNewException
      */
-    @Test(expected = MyNewException.class)
+    @Test
     public void testTwoRecoveryRate() throws MyNewException 
     {
         // Alien
@@ -117,7 +117,7 @@ public class TestAlien
      * Test Remove the observer no recovery when time pass
      * @throws MyNewException
      */
-    @Test (expected = MyNewException.class)
+    @Test 
     public void TestRemoveObserver() throws MyNewException 
     {
     	Alien alien = new Alien("Alien", 40, new RecoveryLinear(5), 2);
